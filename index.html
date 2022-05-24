@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only CSS</title>
+</head>
+<body>
+    <div id="container">
+        <button id="upload">Upload</button>
+        <button id="heart">Heart</button>
+    </div>
+</body>
+</html>
+
+<script>
+    let upload = document.getElementById("upload");
+    let heart = document.getElementById("heart");
+
+    upload.addEventListener("click", ()=>{
+        window.location.href = "./Upload/index.html"
+    })
+    heart.addEventListener("click", ()=>{
+        window.location.href = "./Heart/index.html"
+    })
+</script>
