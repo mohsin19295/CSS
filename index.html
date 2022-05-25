@@ -8,8 +8,9 @@
 </head>
 <body>
     <div id="container">
-        <button id="upload">Upload</button>
+        <button id="upload">Uploading Logo</button>
         <button id="heart">Heart</button>
+        <button id="chrome">Chrome logo</button>
     </div>
 </body>
 </html>
@@ -17,11 +18,15 @@
 <script>
     let upload = document.getElementById("upload");
     let heart = document.getElementById("heart");
+    let chrome = document.getElementById("chrome");
 
     upload.addEventListener("click", ()=>{
-        window.location.href = "./Upload/index.html"
+        window.location.href = "./UploadingLogo/index.html"
     })
     heart.addEventListener("click", ()=>{
         window.location.href = "./Heart/index.html"
+    })
+    chrome.addEventListener("click", ()=>{
+        window.location.href = "./Chrome/index.html"
     })
 </script>
