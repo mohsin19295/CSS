@@ -2,8 +2,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #292829;
+}
+
 #container {
-    background: linear-gradient(rgba(255, 0, 242, 0.671), rgba(25, 26, 25, 0.801));
+    background: linear-gradient(rgba(255, 0, 55, 0.671), rgba(25, 26, 25, 0.801));
     width: 380px;
     height: 350px;
     position: absolute;
@@ -11,7 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
-    box-shadow: 10px -10px 25px rgb(212, 56, 121);
+    box-shadow: -5px -10px 15px rgba(41, 19, 19, 0.87);
 }
 
 #center-box {
