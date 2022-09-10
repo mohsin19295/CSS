@@ -11,6 +11,7 @@
         <button id="upload">Uploading Logo</button>
         <button id="heart">Heart</button>
         <button id="chromeLogo">Chrome logo</button>
+        <button id="linkedIn-loading">LinkedIn Loading</button>
     </div>
 </body>
 </html>
@@ -19,6 +20,7 @@
     let upload = document.getElementById("upload");
     let heart = document.getElementById("heart");
     let chromeLogo = document.getElementById("chromeLogo");
+    let linkedIn = document.getElementById("linkedIn-loading");
 
     upload.addEventListener("click", ()=>{
         window.location.href = "./UploadingLogo/index.html"
@@ -28,5 +30,8 @@
     })
     chromeLogo.addEventListener("click", ()=>{
         window.location.href = "./Chrome/index.html"
+    })
+    linkedIn.addEventListener("click", ()=>{
+        window.location.href = "./linkedIn/index.html"
     })
 </script>
