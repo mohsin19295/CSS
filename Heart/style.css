@@ -1,64 +1,72 @@
 * {
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #292829;
+  box-sizing: border-box;
 }
 
 #container {
-    background: linear-gradient(rgba(255, 0, 55, 0.671), rgba(25, 26, 25, 0.801));
-    width: 380px;
-    height: 350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    box-shadow: -5px -10px 15px rgba(41, 19, 19, 0.87);
+  background: linear-gradient(rgba(255, 0, 55, 0.671), rgba(25, 26, 25, 0.801));
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: -5px -10px 15px rgba(41, 19, 19, 0.87);
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #center-box {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 200px;
-    height: 200px;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    animation: heartAnimation 5s ease infinite;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  animation: heartAnimation 5s ease infinite;
 }
 
 #rotate-box {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    transform: rotate(-45deg);
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  transform: rotate(-45deg);
 }
-
 
 #rotate-box:after,
 #rotate-box:before {
-    content: "";
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    height: 200px;
-    width: 200px;
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  height: 200px;
+  width: 200px;
 }
 
 #rotate-box:before {
-    top: -90px;
-    left: 0px;
+  top: -90px;
+  left: 0px;
 }
 
 #rotate-box:after {
-    top: 0px;
-    left: 90px;
+  top: 0px;
+  left: 90px;
 }
 
 @keyframes heartAnimation {
-    0% { transform: scale(0); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(0); }
+  0% {
+    transform: scale(0);
   }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
